@@ -9,7 +9,7 @@ namespace RectangleIntegral
         {
             return Pow(x,3)/3 + Pow(x,4);
         }
-        static double Calculate(double a, double b, double e)
+        static double CalculateIntegralSquare(double a, double b, double e)
         {
             double delta = b - a;
             double amountRectangles = 2;
@@ -34,7 +34,9 @@ namespace RectangleIntegral
             double a = 5;
             double b = 10;
             double e = 0.001;
-            Console.WriteLine(Calculate(a, b, e));
+            
+            
+            Console.WriteLine(CalculateIntegralSquare(a, b, e));
         }
     }
 }
