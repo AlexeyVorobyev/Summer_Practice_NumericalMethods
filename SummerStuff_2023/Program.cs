@@ -73,10 +73,18 @@ namespace Summer_Practice
             double a;
             double b;
             double e;
+            double x0;
 
             Console.WriteLine("Введите функцию:");
-            // string functionString = Console.ReadLine();
-            string functionString = "x";
+            string functionString = Console.ReadLine();
+            Console.WriteLine("Введите a");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите b:");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите e:");
+            e = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите x0:");
+            x0 = Convert.ToInt32(Console.ReadLine());
             Calc calc = new Calc(functionString,a,b,e,x0);
             Console.WriteLine(calc.CalculateEquality());
         }
